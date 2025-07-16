@@ -1,7 +1,6 @@
 require('dotenv').config();
 const mysql = require('mysql2');
 const config = require('./config/config');
-console.log(config)
 const connection = mysql.createConnection(config);
 
 connection.connect((err) => {
